@@ -1,0 +1,18 @@
+@SIZE 1920 1080
+@BACKGROUND 255 255 255
+@POSITION 40 540
+FUNC draw(point)
+    DEF d 0
+    LOOP 180
+       COLOR d d d
+       MOVE 1
+       TURN 1
+       ADD d point
+    END LOOP
+END FUNC
+
+CALL draw(1)
+CALL draw(-1)
+EXIT
+
+    
